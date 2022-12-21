@@ -1,0 +1,728 @@
+/* ALL PAGES */
+body {
+
+  background-color: #FBF8F1;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  padding: 0 0 4rem;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+  
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #11184f;
+
+}
+
+.nav-link:hover {
+  color: #ea7a66;
+}
+
+.default-container {
+  padding: 3% 10% 7%;
+}
+
+/* INDEX.HTML */
+
+/* HOME SECTION */
+#home-page {
+  margin-bottom: 25%;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 4rem;
+  color: #11184f;
+}
+
+/* JENNA */
+.name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  position: absolute;
+  left: 50%;
+  top: 200%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: #11184f;
+  font-size: 15rem;
+  letter-spacing: 8px;
+  cursor: pointer;
+}
+
+.name::before {
+  content: "JENNA";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 2px,
+    #ea7a66 2px,
+    #ea7a66 4px
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+}
+
+.name::after {
+  content: "JENNA";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    #ea7a66 2px,
+    #ea7a66 4px
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+
+.name:hover:before {
+  top: 10px;
+  left: 10px;
+}
+
+.name:hover:after {
+  top: -10px;
+  left: -10px;
+} 
+
+/* ABOUT SECTION */
+
+#about {
+  background-color: #11184f;
+  padding: 3% 10% 10%;
+}
+
+.sketch-box {
+  padding: 3rem 6rem;
+  display: inline-block;
+  border: 3px solid #ea7a66;
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  position: relative;
+  background-color: #FBF8F1;
+  margin: 100px auto 0;
+  line-height: 28px;
+  box-shadow: 10px 15px 8px -10px rgba(0, 0, 0, 0.3);
+  transition: all 0.13s ease-in;
+}
+
+.sketch-box:hover {
+  transform: translateY(-10px) rotate(1deg);
+  box-shadow: 10px 15px 8px -10px rgba(0, 0, 0, 0.3);
+}
+
+.sketch-box::before {
+  content: '';
+  border: 2px solid #f4c9c2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+  border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+  z-index: 1;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+/* PORTFOLIO  SECTION */
+#portfolio {
+  background-color: #FBF8F1;
+  padding: 7% 10% 10%;
+}
+
+.test_box {
+  padding: 0;
+}
+.test_box .inner {
+  display: block;
+  margin: 10px;
+  overflow: hidden;
+}
+.test_box .inner .test_click {
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(0,0,0,.1);
+  color: #FBF8F1;
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  mix-blend-mode: normal;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.test_box .inner .test_click:hover {
+  background-color: #2e307a;
+  mix-blend-mode: hard-light;
+}
+.flex_this {
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  display: inherit;
+  flex-wrap: inherit;
+  height: auto;
+  margin: 0;
+  padding: 10px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  width: 100%;
+
+}
+.test_box .inner .test_click:hover .flex_this {
+  margin-top: -5px;
+}
+
+.test_title {
+  display: block;
+  font-weight: 700;
+  margin: 0 0 20px;
+  width: 100%;
+}
+.test_link {
+  border: 2px solid #FBF8F1;
+  display: inline-block;
+  font-size: .8em;
+  font-weight: 700;
+  letter-spacing: .1em;
+  margin: 0 auto;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+
+.box-01 .inner {
+  background-image: url('https://picsum.photos/1024/768?image=1033');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prog-box-01 .inner {
+  background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/piggy-bank-game.PNG");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prog-box-02 .inner {
+  background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/pig-tracker.PNG");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prog-box-03 .inner {
+  background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/pig-inventory.PNG");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prog-box-04 .inner {
+  background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/histogram-generator.PNG");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prog-box-05 .inner {
+  background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/textbook-inventory.PNG");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prog-box-06 .inner {
+  background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/website-project.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prog-box-07 .inner {
+  background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/pantree-project.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.design-box-01 .inner {
+  background-color: #ea7a66;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.art-box-01 .inner {
+  background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/christmas-market.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box-02 .inner {
+  background-image: url('https://picsum.photos/1024/768?image=967');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.art-box-02 .inner {
+  background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/sword.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box-03 .inner {
+  background-image: url('https://picsum.photos/1024/768?image=924');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.art-box-03 .inner {
+  background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/unknown.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box-04 .inner {
+  background-image: url('https://picsum.photos/1024/768?image=1073');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box-05 .inner {
+  background-image: url('https://picsum.photos/1024/768?image=1032');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box-06 .inner {
+  background-image: url('https://picsum.photos/1024/768?image=1080');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.art-box-04 .inner {
+  background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/interactive-multimedia-design.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.art-box-05 .inner {
+  background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/koi.JPG");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.art-box-06 .inner {
+  background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/p.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.art-box-07 .inner {
+  background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/lght.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  background-color: #11184f;
+  padding: 5% 10% 10%;
+  color: #11184f;
+}
+
+#experience > h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 4rem;
+  color: #FBF8F1;
+}
+
+.experience-sketch-box {
+  padding: 3rem 6rem;
+  display: inline-block;
+  border: 3px solid #ea7a66;
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  position: relative;
+  /* left: 15%; */
+  /* top: 200%; */
+  background-color: #FBF8F1;
+  margin: 100px auto 0;
+  /* margin: 100px 0px; */
+  line-height: 28px;
+  box-shadow: 10px 15px 8px -10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  /* transition: all 0.13s ease-in; */
+}
+
+/* .experience-sketch-box:hover {
+  transform: translateY(-10px) rotate(1deg);
+  box-shadow: 10px 15px 8px -10px rgba(0, 0, 0, 0.3);
+} */
+
+/* .experience-sketch-box::before {
+  content: '';
+  border: 2px solid #f4c9c2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+  border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+  z-index: 1;
+} */
+
+.exp-box {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5%;
+}
+
+.exp-box > h3, .exp-box > a > h3 {
+  font-weight: 900;
+}
+
+.icon {
+  margin: 1rem;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.grow { 
+  transition: all .2s ease-in-out; 
+}
+  
+.grow:hover { 
+  transform: scale(1.2); 
+  color: #ea7a66;
+}
+
+/* CONTACT SECTION */
+#contact{
+  padding: 10% 10% 2%;
+}
+
+label {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+}
+
+#contact p, #contact-page p {
+  margin: 1rem auto 2rem;
+}
+
+input[type=text], textarea[type=text] {
+  border: 2px solid #11184f;
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  transition: all 0.13s ease-in;
+}
+
+input[type=text]:focus, textarea[type=text]:focus {
+  border: 2px solid #ea7a66;
+  box-shadow: none;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  background-color: #11184f;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #ea7a66;
+  border: none;
+}
+
+.fa-paper-plane {
+  margin-right: 0.5rem;
+}
+
+.list-unstyled {
+  margin-top: 1.3rem;
+}
+
+
+/* ABOUT PAGE */
+
+#goals {
+  padding: 5% 0% 3%;
+  background-color: #11184f;
+  color: #FBF8F1;
+}
+
+#goals h1 {
+  color: #FBF8F1;
+}
+
+#contact-not-home{
+  padding: 5% 10%;
+}
+
+#skills {
+  padding: 5% 0% 0%;
+}
+
+/* EXPERIENCE PAGE */
+
+.exp-sketch-box {
+  padding: 2rem 6rem;
+  display: inline-block;
+  border: 3px solid #ea7a66;
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  position: relative;
+  background-color: #FBF8F1;
+  margin: 3rem auto 0;
+  line-height: 28px;
+  box-shadow: 10px 15px 8px -10px rgba(0, 0, 0, 0.3);
+  transition: all 0.13s ease-in;
+}
+
+.exp-sketch-box h1 {
+  font-size: 2rem;
+}
+
+.exp-sketch-box:hover {
+  transform: translateY(-10px) rotate(1deg);
+  box-shadow: 10px 15px 8px -10px rgba(0, 0, 0, 0.3);
+}
+
+.exp-sketch-box::before {
+  content: '';
+  border: 2px solid #f4c9c2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+  border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+  z-index: 1;
+}
+
+h4, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 2rem 0rem 1rem;
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 5%;
+  /* border-style: outset; */
+  background-color: #11184f;
+  color: #FBF8F1;
+}
+
+#skills p {
+  font-size: small;
+}
+
+
+.skills-sketch-box {
+  padding: 1rem;
+  display: none;
+  border: 3px solid #ea7a66;
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  position: relative;
+  background-color: #FBF8F1;
+  margin: 10% auto 0;
+  line-height: 28px;
+  box-shadow: 10px 15px 8px -10px rgba(0, 0, 0, 0.3);
+}
+
+.skills-sketch-box::before {
+  content: '';
+  border: 2px solid #f4c9c2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+  border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+  z-index: 1;
+}
+
+
+.dropdown:hover .skills-sketch-box {
+  display: block;
+}
+
+h5:hover {
+  border-style: inset;
+}
+
+.title-screen-img {
+  margin-right: 30px;
+  float: left;
+}
+
+.pig-tracker-img {
+  width:100%;
+}
+
+/* {box-sizing: border-box;} */
+
+/* Button used to open the contact form - fixed at the bottom of the page
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+} */
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 5%;
+  /* bottom: 5%;
+  right: 20%; */
+  /* border: 3px solid #f1f1f1; */
+  bottom: 0;
+  right: 15px;
+  
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 50rem;
+  padding: 10px;
+  background-color: white;
+}
+
+.art-form-container {
+  max-width: 35rem;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+} */
+
+/* When the inputs get focus, do something */
+/* .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+} */
+
+/* Set a style for the submit/login button */
+.form-container .btn, .art-form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel, .art-form-container .cancel{
+  background-color: #ea7a66;;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+#modal-img {
+  margin-bottom: 20px;
+  width:100%;
+}
+
+#art-modal-img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.cancel {
+  margin: 20px 0px;
+}
+
+#title, #art-title{
+
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  color: #11184f;
+  
+}
+
+
+
+
+
