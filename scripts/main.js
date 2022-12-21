@@ -1,6 +1,6 @@
 var piggy_bank_info = [
     "PIGGY BANK: ESCAPE FROM HAMMER",
-    "C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/piggy-bank-game.PNG",
+    "images/piggy-bank-game.PNG",
     "Java",
     "This was a group project for CMPT 276: Introduction to Software Engineering. I worked in a group of 4 and collaborated using GitLab to create a 2D maze game. We used Maven for build automation and JUnit to test our game.",
     "N/A"
@@ -8,7 +8,7 @@ var piggy_bank_info = [
 
 var pig_tracker_info = [
     "PIG TRACKER",
-    "C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/pig-tracker.PNG",
+    "images/pig-tracker.PNG",
     "Angular - TypeScript, HTML, CSS/Bootstrap",
     "This was my final project for CMPT 272: Web I - Client-side Development. This is an Angular application that allows users to add, edit, delete, and view various pig reports. Using Leaflet and MapBox, I created an interactive map that displays the locations of the pigs. I explored the use of services, pipes, and routing to implement the navigation and functionality of the application.",
     "https://github.com/jennaolee/Pig-Tracker"
@@ -16,7 +16,7 @@ var pig_tracker_info = [
 
 var pig_inventory_info = [
     "PIG INVENTORY",
-    "C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/pig-inventory.PNG",
+    "images/pig-inventory.PNG",
     "TypeScript, HTML, CSS/Bootstrap",
     "This was an assignment for CMPT 272: Web I - Client-side Development. Users can add, delete, and view pigs in the inventory.",
     "https://jennaolee.github.io/Pig-Inventory/"
@@ -24,7 +24,7 @@ var pig_inventory_info = [
 
 var histogram_generator_info = [
     "HISTOGRAM GENERATOR",
-    "C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/histogram-generator.PNG",
+    "images/histogram-generator.PNG",
     "JavaScript, HTML, CSS",
     "This was an assignment for CMPT 272: Web I - Client-side Development. Users can edit the grade boundaries and upload a .csv file with student names and grades. Given the input, the application will display the highest, lowest, mean, and median grade, as well as a histogram of the grade distribution.",
     "https://jennaolee.github.io/Histogram-Generator/"
@@ -32,7 +32,7 @@ var histogram_generator_info = [
 
 var website_project_info = [
     "PERSONAL WEBSITE",
-    "C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/website-project.png",
+    "images/website-project.png",
     "JavaScript, HTML, CSS",
     "This is an ongoing personal project to share my programming projects and portfolio! I plan on growing this project as I develop my web development skills.",
     "https://jennaolee.github.io/Personal-Website/"
@@ -105,35 +105,35 @@ function openArtModal(id) {
 
     if (id == "flurry") {
         title.innerHTML = "FLURRY";
-        source.src = "C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/christmas-market.png";
+        source.src = "images/christmas-market.png";
        
 
     } else if (id == "sword") {
         title.innerHTML = "SUNSET SWORD";
-        source.src = "C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/sword.png";
+        source.src = "images/sword.png";
        
 
     } else if (id == "who") {
         title.innerHTML = "WHO"
-        source.src = "C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/unknown.jpg";
+        source.src = "images/unknown.jpg";
        
 
     } else if (id == "imd") {
         title.innerHTML = "IMD";
-        source.src = "C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/interactive-multimedia-design.png";
+        source.src = "images/interactive-multimedia-design.png";
         
 
     } else if (id == "waves") {
         title.innerHTML = "WAVES";
-        source.src = "C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/koi.JPG";
+        source.src = "images/koi.JPG";
         
     } else if (id == "lillies") {
         title.innerHTML = "LILLIES";
-        source.src = "C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/ponder.png";
+        source.src = "images/ponder.png";
        
     } else if (id == "lighthouse") {
         title.innerHTML = "LIGHTHOUSE";
-        source.src = "C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/lighthouse.jpg";
+        source.src = "images/lighthouse.jpg";
        
     } 
     document.getElementById("artModal").style.display = "block";
