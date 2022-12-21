@@ -1,0 +1,79 @@
+
+.exp-sketch-box {
+    padding: 2rem 6rem;
+    display: inline-block;
+    border: 3px solid #ea7a66;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    position: relative;
+    background-color: #FBF8F1;
+    margin: 3rem auto 0;
+    line-height: 28px;
+    box-shadow: 10px 15px 8px -10px rgba(0, 0, 0, 0.3);
+    transition: all 0.13s ease-in;
+}
+
+.exp-sketch-box h1 {
+    font-size: 2rem;
+}
+
+.exp-sketch-box:hover {
+    transform: translateY(-10px) rotate(1deg);
+    box-shadow: 10px 15px 8px -10px rgba(0, 0, 0, 0.3);
+}
+
+.exp-sketch-box::before {
+    content: '';
+    border: 2px solid #f4c9c2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+    border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    z-index: 1;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 5%;
+    background-color: #11184f;
+    color: #FBF8F1;
+}
+
+.skills-sketch-box {
+    padding: 1rem;
+    display: none;
+    border: 3px solid #ea7a66;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    position: relative;
+    background-color: #FBF8F1;
+    margin: 10% auto;
+    line-height: 28px;
+    box-shadow: 10px 15px 8px -10px rgba(0, 0, 0, 0.3);
+}
+
+.skills-sketch-box::before {
+    content: '';
+    border: 2px solid #f4c9c2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+    border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    z-index: 1;
+}
+
+
+.dropdown:hover .skills-sketch-box {
+    display: block;
+}
+
+h5:hover {
+    border-style: inset;
+}

@@ -35,7 +35,7 @@ var website_project_info = [
     "C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/website-project.png",
     "JavaScript, HTML, CSS",
     "This is an ongoing personal project to share my programming projects and portfolio! I plan on growing this project as I develop my web development skills.",
-    "Link"
+    "https://jennaolee.github.io/Personal-Website/"
 ];
 
 var art_links = [
@@ -115,7 +115,7 @@ function openArtModal(id) {
 
     } else if (id == "who") {
         title.innerHTML = "WHO"
-        source.src = "C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/flowerface.jpg";
+        source.src = "C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/unknown.jpg";
        
 
     } else if (id == "imd") {

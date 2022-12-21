@@ -1,0 +1,160 @@
+#home-page {
+    margin-bottom: 25%;
+}
+
+/* JENNA */
+.name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    top: 200%;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: #11184f;
+    font-size: 15rem;
+    letter-spacing: 8px;
+    cursor: pointer;
+}
+
+.name::before {
+    content: "JENNA";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient(
+        45deg,
+        transparent 0,
+        transparent 2px,
+        #ea7a66 2px,
+        #ea7a66 4px
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+}
+
+.name::after {
+    content: "JENNA";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient(
+        135deg,
+        transparent 0,
+        transparent 2px,
+        #ea7a66 2px,
+        #ea7a66 4px
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    top: 0px;
+    left: 0px;
+    transition: 1s;
+}
+
+.name:hover:before {
+    top: 10px;
+    left: 10px;
+}
+
+.name:hover:after {
+    top: -10px;
+    left: -10px;
+} 
+
+#about, #experience {
+    background-color: #11184f;
+    padding: 3% 10% 10%;
+}
+
+#portfolio {
+    background-color: #FBF8F1;
+    padding: 7% 10% 10%;
+}
+
+#experience {
+    padding: 5% 10% 10%;
+    color: #11184f;
+}
+
+#experience > h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 4rem;
+    color: #FBF8F1;
+}
+
+.experience-sketch-box {
+    padding: 3rem 6rem;
+    display: inline-block;
+    border: 3px solid #ea7a66;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    position: relative;
+    background-color: #FBF8F1;
+    margin: 100px auto 0;
+    line-height: 28px;
+    box-shadow: 10px 15px 8px -10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.sketch-box {
+    padding: 3rem 6rem;
+    display: inline-block;
+    border: 3px solid #ea7a66;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    position: relative;
+    background-color: #FBF8F1;
+    margin: 100px auto 0;
+    line-height: 28px;
+    box-shadow: 10px 15px 8px -10px rgba(0, 0, 0, 0.3);
+    transition: all 0.13s ease-in;
+}
+
+.sketch-box:hover {
+    transform: translateY(-10px) rotate(1deg);
+    box-shadow: 10px 15px 8px -10px rgba(0, 0, 0, 0.3);
+}
+
+.sketch-box::before {
+    content: '';
+    border: 2px solid #f4c9c2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+    border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    z-index: 1;
+}
+
+
+.exp-box {
+    text-align: center;
+    padding: 5%;
+}
+
+.exp-box > h3, .exp-box > a > h3 {
+    font-weight: 900;
+}
+
+#contact{
+    padding: 10% 10% 2%;
+}
+
+#contact p, #contact-page p {
+    margin: 1rem auto 2rem;
+}
+
+#skills {
+    padding: 5% 0% 0%;
+}
+
+
+#skills p {
+    font-size: small;
+}
+  

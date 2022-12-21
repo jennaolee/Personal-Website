@@ -1,0 +1,98 @@
+.prog-box-01 .inner {
+    background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/piggy-bank-game.PNG");
+}
+
+.prog-box-02 .inner {
+    background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/pig-tracker.PNG");
+}
+
+.prog-box-03 .inner {
+    background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/pig-inventory.PNG");
+}
+
+.prog-box-04 .inner {
+    background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/histogram-generator.PNG");
+}
+
+.prog-box-06 .inner {
+    background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/website-project.png");
+}
+
+.design-box-01 .inner {
+    background-color: #ea7a66;
+}
+
+.art-box-01 .inner {
+    background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/christmas-market.png");
+}
+
+.art-box-02 .inner {
+    background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/sword.png");
+}
+
+.art-box-03 .inner {
+    background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/unknown.jpg");
+}
+
+.art-box-04 .inner {
+    background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/interactive-multimedia-design.png");
+}
+
+.art-box-05 .inner {
+    background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/koi.JPG");
+}
+
+.art-box-06 .inner {
+    background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/p.png");
+}
+
+.art-box-07 .inner {
+    background-image: url("C:/Users/JennaLee/Documents/Web-Development/Personal_Wesbite/images/lght.jpg");
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 5%;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 50rem;
+    padding: 10px;
+    background-color: white;
+}
+
+.art-form-container {
+    max-width: 35rem;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container .cancel, .art-form-container .cancel{
+    background-color: #ea7a66;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin: 20px 0px 10px;
+    opacity: 0.8;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+#modal-img, #art-modal-img {
+    margin-bottom: 20px;
+    width:100%;
+}
+
+#title, #art-title{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: #11184f;
+}
