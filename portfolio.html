@@ -140,7 +140,7 @@
 
     </div>
 
-    <div class="form-popup" id="myForm">
+    <div class="form-popup scrollable" id="myForm">
       <form action="/action_page.php" class="form-container">
         <h3 id="title"></h3>
 
@@ -156,30 +156,6 @@
 
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
       </form>
-    </div>
-
-  </section>
-
-  <section id="title">
-    <div class="default-container">
-
-      <h1>DESIGN</h1>
-      <p>Mobile and web designs!</p>
-
-      <div class="row">
-        <div class="test_box box design-box-01 col-lg-4 col-md-6">
-          <div class="inner">
-            <a href="#" class="test_click">
-              <div class="flex_this">
-                <h4 class="test_title">COMING SOON!</h4>
-              </div>
-            </a>
-          </div>
-        </div>
-
-
-      </div>
-
     </div>
 
   </section>
@@ -287,13 +263,70 @@
 
   </section>
 
-  <div class="form-popup" id="artModal">
+  <div class="form-popup scrollable" id="artModal">
     <form class="art-form-container">
       <h3 id="art-title"></h3>
 
       <img id="art-modal-img" src="" alt="">
 
       <button type="button" class="btn cancel" onclick="closeArtModal()">Close</button>
+    </form>
+  </div>
+
+  <section id="title">
+    <div class="default-container">
+
+      <h1>3D MODELING & ANIMATION</h1>
+      <p>Check out my 3D models in Maya and Blender!</p>
+      <div class="row">
+        <div class="test_box box model-box-01 col-lg-4 col-md-6">
+          <div class="inner">
+            <a id="headphones" href="#" onclick="openModelModal(id)" class="test_click">
+              <div class="flex_this">
+                <h4 class="test_title">HEADPHONES</h4>
+                <span class="test_link">MORE</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="test_box box model-box-02 col-lg-4 col-md-6">
+          <div class="inner">
+            <a id="camera" href="#" onclick="openModelModal(id)" class="test_click">
+              <div class="flex_this">
+                <h4 class="test_title">CAMERA</h4>
+                <span class="test_link">MORE</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="test_box box model-box-03 col-lg-4 col-md-6">
+          <div class="inner">
+            <a id="cup" href="#" onclick="openModelModal(id)" class="test_click">
+              <div class="flex_this">
+                <h4 class="test_title">CUP</h4>
+                <span class="test_link">MORE</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="form-popup scrollable" id="modelModal">
+    <form class="model-form-container">
+      <h3 id="model-title"></h3>
+
+      <img id="model-modal-img" src="" alt="">
+
+      <button type="button" class="btn cancel" onclick="closeModelModal()">Close</button>
     </form>
   </div>
 

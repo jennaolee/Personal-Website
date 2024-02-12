@@ -18,10 +18,6 @@
     background-image: url("../images/website-project.png");
 }
 
-.design-box-01 .inner {
-    background-color: #ea7a66;
-}
-
 .art-box-01 .inner {
     background-image: url("../images/christmas-market.png");
 }
@@ -50,12 +46,29 @@
     background-image: url("../images/lght.jpg");
 }
 
+.model-box-01 .inner {
+    background-image: url("../images/headphones.png");
+}
+
+.model-box-02 .inner {
+    background-image: url("../images/camera-wireframe.PNG");
+}
+
+.model-box-03 .inner {
+    background-image: url("../images/cup-no-wireframe.png");
+}
+
 .form-popup {
     display: none;
-    position: fixed;
+    /* position: fixed;
     top: 5%;
     bottom: 0;
-    right: 15px;
+    right: 15px; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
     z-index: 9;
 }
 
@@ -71,7 +84,13 @@
     background-color: white;
 }
 
-.form-container .cancel, .art-form-container .cancel{
+.model-form-container {
+    max-width: 65rem;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container .cancel, .art-form-container .cancel, .model-form-container .cancel {
     background-color: #ea7a66;
     color: white;
     padding: 16px 20px;
@@ -91,8 +110,13 @@
     width:100%;
 }
 
-#title, #art-title{
+#title, #art-title, #model-title{
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     color: #11184f;
+}
+
+.scrollable {
+    height: 1000px;
+    overflow-y: scroll;
 }

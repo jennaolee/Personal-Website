@@ -140,6 +140,34 @@ function openArtModal(id) {
 
 }
 
+function openModelModal(id) {
+    let title = (document.getElementById("model-title"));
+    let source = document.getElementById("model-modal-img");
+    
+
+    if (id == "headphones") {
+        title.innerHTML = "HEADPHONES";
+        source.src = "images/headphones.png";
+       
+
+    } else if (id == "camera") {
+        title.innerHTML = "CAMERA";
+        source.src = "images/camera-wireframe.PNG";
+       
+
+    } else if (id == "cup") {
+        title.innerHTML = "CUP"
+        source.src = "images/cup-no-wireframe.png";
+       
+
+    } 
+    document.getElementById("modelModal").style.display = "block";
+}
+
 function closeArtModal() {
     document.getElementById("artModal").style.display = "none";
+}
+
+function closeModelModal() {
+    document.getElementById("modelModal").style.display = "none";
 }
