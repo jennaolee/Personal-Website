@@ -60,15 +60,11 @@
 
 .form-popup {
     display: none;
-    /* position: fixed;
-    top: 5%;
-    bottom: 0;
-    right: 15px; */
     position: fixed;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 40%;
     z-index: 9;
 }
 
@@ -105,9 +101,12 @@
     opacity: 1;
 }
 
-#modal-img, #art-modal-img {
+#modal-img, #art-modal-img, #model-modal-img {
     margin-bottom: 20px;
-    width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
 
 #title, #art-title, #model-title{
